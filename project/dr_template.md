@@ -18,25 +18,38 @@
 
 ### Descriptions
 More detailed descriptions of each asset identified above.
-Web: Responsible for running the flask app and respond to API requests
+Web: Responsible for running the flask app and respond to API requests.
+
 EKS(Elastic Kubernetes Service) Control: Responsible for Managing and running workload, requested by the Admin.
+
 EKS(Elastic Kubernetes Service) Nodes: Responsible for running the workload on the cluster.
+
 VPC: Responsible for providing the IP CIDR for Resources to be Dynamically assigned one a resource is created.
+
 ALB (Application Load Balancer): Responsible for routing the requests from Internet to application attached to the ALB.
+
 Aurora DB: Responsible for storing data related to the APP.
 
 ## DR Plan
 ### Pre-Steps:
 List steps you would perform to setup the infrastructure in the other region. It doesn't have to be super detailed, but high-level should suffice.
-Infrastructure:
+**Infrastructure**:
+
 EC2 instances will be replicated on DR region.
-EKS control DR will be handled by AWS as these nodes are managed by AWS
+
+EKS control DR will be handled by AWS as these nodes are managed by AWS.
+
 EKS Node will have DR nodes in DR zone.
+
 VPC there will one VPC on DR zone.
+
 ALB there will one ALB on DR to handle traffic incase of switch.
-Aurora DB has data replication from Primary DB to secondary DB on DR
+
+Aurora DB has data replication from Primary DB to secondary DB on DR.
+
 
 ## Steps:
 You won't actually perform these steps, but write out what you would do to "fail-over" your application and database cluster to the other region. Think about all the pieces that were setup and how you would use those in the other region
+
 1. Perform RDS Cluster failover to DR zone.
 2. Confrim the Web instance is responding to API requests on DR zone after swithc over.
