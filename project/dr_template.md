@@ -25,7 +25,7 @@ EKS(Elastic Kubernetes Service) Control: Responsible for Managing and running wo
 
 EKS(Elastic Kubernetes Service) Nodes: Responsible for running the workload on the cluster.
 
-VPC: Responsible for providing the IP CIDR for Resources to be Dynamically assigned one a resource is created.
+VPC(Virtual Private Cloud): Responsible for providing the IP CIDR for Resources to be Dynamically assigned one a resource is created.
 
 ALB (Application Load Balancer): Responsible for routing the requests from Internet to application attached to the ALB.
 
