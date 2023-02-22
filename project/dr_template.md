@@ -19,7 +19,8 @@
 
 ### Descriptions
 More detailed descriptions of each asset identified above.
-Web: Responsible for running the flask app and respond to API requests.
+
+EC2(Elastic Compute Cloud, Web Application): Responsible for running the flask app and respond to API requests.
 
 EKS(Elastic Kubernetes Service) Control: Responsible for Managing and running workload, requested by the Admin.
 
