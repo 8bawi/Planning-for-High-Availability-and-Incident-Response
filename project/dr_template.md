@@ -2,6 +2,7 @@
 
 ## AWS Zones
 **Primary**: us-east-2
+
 **Secondary**:us-west-1
 
 ## Servers and Clusters
